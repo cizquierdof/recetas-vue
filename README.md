@@ -4,7 +4,7 @@ Conjunto de recetas para hacer trabajos habituales en Vue.js.
 
 ## Crear un  esqueleto de app con vue-cli
 
-```shell 
+```shell
 vue create app-name
 ```
 
@@ -16,4 +16,4 @@ También se puede utilizar un administrador de proyectos gráfico mediante el co
 vue ui
 ```
 
-Hace lo mismo que la línea de comandos pero en forma gráfica a través del navegador y permite una pequeña gestión de proyectos.
+Hace lo mismo que la línea de comandos pero en forma gráfica a través del navegador y permite una pequeña gestión de proyectos
