@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--                     Añadir vue.js al proyecto              -->
+    <title>primer vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <h1>Hola mundo!</h1>
+    <div class="app">
+        <h1>
+            {{msg}}
+        </h1>
+        <h2>
+            {{holaMetodo()}}
+        </h2>
+        <h2>
+            {{msgMayusculas()}}
+        </h2>
+
+        <img v-bind:src='image' alt="" height="200px" >
+        <button v-on:click='cambiarMsg()'>Cambiar</button>
+        <button v-on:click='destruir()'>destruir</button>
+        <div>
+            Primero
+            <button v-on:click='incrementaPrimero()'>+</button>
+        </div>
+        <div>
+            Segundo
+            <button v-on:click='incrementaSegundo()'>+</button>
+            
+        </div>
+        <div>
+            Tercero
+            <button v-on:click='incrementaTercero()'>+</button>
+            
+        </div>
+        <div>
+            Cuarto
+            <button v-on:click='incrementaCuarto()'>+</button>
+
+        </div>
+        <div>
+            <h2>Suma: 
+                {{suma}}</h2>
+        </div>
+
+        <div>
+            teclea algo <input type="text" v-model:value='msg'>
+        
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
