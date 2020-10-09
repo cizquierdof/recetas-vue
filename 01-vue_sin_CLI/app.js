@@ -5,6 +5,7 @@ const app = new Vue({
     // data es el equivalente al estado de react
     data: {
         msg: " Hola Carlos!",
+        rawHtml:'<span style="color:red">Rojo</span>',
         image: 'https://victorroblesweb.es/wp-content/uploads/2017/03/vuejs2-victorroblesweb.jpg',
         primero: 0,
         segundo: 0,

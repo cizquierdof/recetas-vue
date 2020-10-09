@@ -50,8 +50,8 @@ Con vuex, en vez de tener los datos en el componente, los guardamos aquí. Imagi
   state: {
     products:[
       {id:1, name: 'pelota', price: 25.3, inventory: 3},
-      {id:1, name: 'gorra', price: 37.9, inventory: 4},
-      {id:1, name: 'gafas', price: 203.2, inventory: 2},
+      {id:2, name: 'gorra', price: 37.9, inventory: 4},
+      {id:3, name: 'gafas', price: 203.2, inventory: 2},
     ]
   },
 
@@ -378,7 +378,7 @@ y en el store tendremos que hacer una mutación que modifique la lista de produc
 
 ## Getters como funciones
 
-los getters no pueden acetar parámetros de forma directa, sin embargo si que pueden devolver funciones que si que los aceten, de esta forma se pueden utilizar getters pasándoles parámetros. Por ejemplo imaginemos que queremos qe cuando solo quede un artículo en stock, se cambie la clase para que aparezca en rojo y nos avise de que está apunto de agotarse.
+los getters no pueden aceptar parámetros de forma directa, sin embargo si que pueden devolver funciones que si que los acepten, de esta forma se pueden utilizar getters pasándoles parámetros. Por ejemplo imaginemos que queremos qe cuando solo quede un artículo en stock, se cambie la clase para que aparezca en rojo y nos avise de que está apunto de agotarse.
 
 En AppProductList hacemos:
 
