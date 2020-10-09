@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <test v-bind:header='header'/>
-    <test2 v-bind:header='header'/>
+    <emisor v-bind:header='header'/>
+    <receptor v-bind:header='header'/>
   </div>
 </template>
 <script>
-import test from './components/test'
-import test2 from './components/test2'
+import emisor from './components/emmiterComp'
+import receptor from './components/receiverComp'
 export default {
   name: 'App',
   components: {
-    test,
-    test2,
+    emisor,
+    receptor,
   },
   data() {
     return {
